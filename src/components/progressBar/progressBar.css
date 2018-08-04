@@ -1,0 +1,37 @@
+.progress-bar-component{
+    position: relative;
+    height: 12px;
+    width: 400px;
+    background: #afafaf;
+    box-shadow: 0 6px 12px -4px rgba(0,0,0,.4);
+    border-radius: 6px;
+    margin: 1.2rem auto;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.progress-bar-fill {
+    transition: width .3s;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    background: #00aacc;
+    width: 0px;
+}
+.hidden {
+    opacity: 0
+}
+/* not using */
+.hide-animation {
+    animation: hide .2s forwards;
+    animation-delay: 2s;
+}
+@keyframes hide {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
